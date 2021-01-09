@@ -7,20 +7,23 @@
     android:padding="12dp"
     tools:context=".UserRegisterActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:src="@drawable/logo_daddykost"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_register"
+        android:textColor="@color/custom_blue_dark"
+        android:layout_marginTop="14dp"
+        android:textSize="22sp"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/title_user_fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
-        android:layout_marginTop="50dp"
-        android:hint="Nama Lengkap">
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/full_name">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_user_fullname"
             android:layout_width="match_parent"
@@ -32,7 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title_user_fullname"
         android:layout_marginTop="12dp"
-        android:hint="Nomor telepon">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/phone_number">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_user_phonenumber"
             android:layout_width="match_parent"
@@ -45,7 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title_user_phonenumber"
         android:layout_marginTop="12dp"
-        android:hint="E-Mail">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/e_mail">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_user_email"
             android:layout_width="match_parent"
@@ -58,7 +65,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title_user_email"
         android:layout_marginTop="12dp"
-        android:hint="Username">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/username">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_user_username"
             android:layout_width="match_parent"
@@ -71,7 +80,9 @@
         android:layout_below="@id/title_user_username"
         android:layout_marginTop="12dp"
         app:endIconMode="password_toggle"
-        android:hint="Password">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/password">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_user_password"
             android:layout_width="match_parent"
@@ -83,7 +94,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="Register"
+        app:backgroundTint="@color/custom_blue_dark"
+        android:text="@string/register"
         android:textStyle="bold"
         android:textSize="14sp"
         android:padding="14dp"
@@ -95,9 +107,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_user_register"
-        android:text="Login Disini"
+        android:text="@string/login_here"
         android:textSize="14sp"
-        android:textColor="@color/black"
+        android:textColor="@color/custom_blue_dark"
         android:textAllCaps="false"
         style="?android:attr/borderlessButtonStyle"
         android:layout_marginTop="50dp"/>

@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
 public class LoginActivity extends AppCompatActivity {
 //    private Spinner spUser;
+    String text = "<font color=#000000>Belum Punya Akun? </font><font color=#5E83BB>Daftar Disini</font>";
     public Button btnLogin;
     public Button btntToDivide;
 
@@ -25,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
+        btntToDivide.setText(Html.fromHtml(text));
         btntToDivide.setOnClickListener(v -> {
             Intent intent = new Intent(this, RoleDivideActivity.class);
             startActivity(intent);

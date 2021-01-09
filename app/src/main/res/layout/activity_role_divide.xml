@@ -32,11 +32,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            app:icon="@drawable/ic_person_search"
+            app:backgroundTint="@color/custom_blue_dark"
+            app:iconSize="30dp"
+            app:iconGravity="textStart"
             android:text="@string/pencari_kost"/>
         <Button
             android:id="@+id/btn_to_owner_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:icon="@drawable/ic_person_add"
+            app:backgroundTint="@color/custom_blue_dark"
+            app:iconSize="30dp"
+            app:iconGravity="textStart"
             android:text="@string/owner_kost"/>
     </LinearLayout>
 </RelativeLayout>

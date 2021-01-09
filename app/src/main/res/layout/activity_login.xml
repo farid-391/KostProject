@@ -21,7 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
         android:layout_marginTop="50dp"
-        android:hint="Username">
+        app:hintTextColor="@color/custom_blue_dark"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/username">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -33,7 +36,10 @@
         android:layout_below="@id/txt_username"
         android:layout_marginTop="12dp"
         app:endIconMode="password_toggle"
-        android:hint="Password">
+        app:hintTextColor="@color/custom_blue_dark"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/custom_blue_dark"
+        android:hint="@string/password">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="LOGIN"
+        app:backgroundTint="@color/custom_blue_dark"
+        android:text="@string/login"
         android:textStyle="bold"
         android:textSize="14sp"
         android:padding="14dp"
@@ -56,8 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_login"
-        android:text="Daftar Disini"
-        android:textSize="16sp"
+        android:text="@string/register_here"
+        android:textSize="14sp"
         android:textColor="@color/custom_blue_dark"
         android:textAllCaps="false"
         style="?android:attr/borderlessButtonStyle"

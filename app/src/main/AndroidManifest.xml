@@ -4,13 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/box_icon_dk"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/original_icon_dk"
         android:supportsRtl="true"
         android:theme="@style/Theme.KostCoba2">
-        <activity android:name=".OwnerRegisterActivity" android:label="Owner Register"/>
-        <activity android:name=".UserRegisterActivity" android:label="User Register"/>
+        <activity android:name=".OwnerRegisterActivity"
+            android:theme="@style/Theme.KostCobaNoActionBar" />
+        <activity android:name=".UserRegisterActivity"
+            android:theme="@style/Theme.KostCobaNoActionBar" />
         <activity android:name=".RoleDivideActivity" android:theme="@style/Theme.KostCobaNoActionBar"/>
         <activity
             android:name=".LoginActivity"
