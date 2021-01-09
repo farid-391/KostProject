@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KostCoba2</string>
+    <string name="reg_as">Register Sebagai</string>
+    <string name="pencari_kost">Pencari Kost</string>
+    <string name="owner_kost">Owner Kost</string>
+    <string-array name="user_option">
+        <item>Daftar Sebagai</item>
+        <item>Owner Kos</item>
+        <item>Pencari Kos</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
