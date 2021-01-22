@@ -1,10 +1,12 @@
-package com.example.kostcoba2;
+package com.example.kostcoba2.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.example.kostcoba2.R;
 
 public class RoleDivideActivity extends AppCompatActivity {
     public Button btnUserRegister;

@@ -1,12 +1,13 @@
-package com.example.kostcoba2;
+package com.example.kostcoba2.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.View;
 import android.widget.Button;
+
+import com.example.kostcoba2.R;
 
 public class UserRegisterActivity extends AppCompatActivity {
     String text = "<font color=#000000>Sudah Punya Akun? </font><font color=#5E83BB>Login Disini</font>";

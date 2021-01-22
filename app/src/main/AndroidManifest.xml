@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kostcoba2">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/box_icon_dk"
@@ -9,28 +13,34 @@
         android:roundIcon="@mipmap/original_icon_dk"
         android:supportsRtl="true"
         android:theme="@style/Theme.KostCoba2">
-        <activity android:name=".OwnerRegisterActivity"
-            android:theme="@style/Theme.KostCobaNoActionBar" />
-        <activity android:name=".UserRegisterActivity"
-            android:theme="@style/Theme.KostCobaNoActionBar" />
-        <activity android:name=".RoleDivideActivity" android:theme="@style/Theme.KostCobaNoActionBar"/>
+        <activity android:name=".user.MainActivityUser"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkoC33c5LvvJD3z-mZg1omN8sDo9P7EOs" />
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.OwnerRegisterActivity"
+            android:theme="@style/Theme.KostCobaNoActionBar" />
+        <activity
+            android:name=".login.UserRegisterActivity"
+            android:theme="@style/Theme.KostCobaNoActionBar" />
+        <activity
+            android:name=".login.RoleDivideActivity"
+            android:theme="@style/Theme.KostCobaNoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
             android:theme="@style/Theme.KostCobaNoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".owner.MainActivityOwner" />
     </application>
 
 </manifest>
